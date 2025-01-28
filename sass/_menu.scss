@@ -1,0 +1,83 @@
+/* Menú */
+.header {
+    width: 100%;
+    background-color: orange;
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header .button {
+    display: none;
+    cursor: pointer;
+}
+
+.header svg {
+    width: 2em;
+    height: 2em;
+    fill: white;
+    background-color: orange;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.header ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.header ul li {
+    margin: 1em;
+}
+
+.hay a {
+    text-decoration: underline !important;
+    margin-left: 123px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .header .button {
+        display: block;
+    }
+
+    .header .nav-j25 {
+        width: 100%;
+        height: 0;
+        pointer-events: none;
+        overflow: hidden;
+        display: flex;
+        flex-flow: column nowrap;
+        transition: all 0.5s ease;
+    }
+
+    .header .nav-j25.activo {
+        height: 46vh;
+        pointer-events: auto;
+    }
+
+    .header ul {
+        flex-direction: column;
+    }
+
+    .header ul li {
+        margin: 1rem 0;
+    }
+
+    .hay a {
+        margin-left: 0;
+    }
+}

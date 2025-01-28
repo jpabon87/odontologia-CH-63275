@@ -1,0 +1,79 @@
+/* Sedes */
+.grid-contenido {
+    display: grid;
+    gap: 10px;
+    grid-template:
+        "sedes-titulo" 170px
+        "sedes-listas-desplegables" 200px
+        "sedes-todas" auto
+        "sedes-mapa" auto;
+}
+
+.sedes-titulo {
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.sedes-titulo h1 {
+    margin: 10px 0;
+}
+
+.sedes-listas-desplegables {
+    width: 380px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#submit {
+    padding: 10px 80px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px 10px 0 0;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+@media (min-width: 600px) {
+    form {
+        flex-direction: row;
+    }
+
+    .sedes-listas-desplegables {
+        width: 1300px;
+    }
+
+    .grid-contenido {
+        grid-template:
+            "sedes-titulo sedes-titulo" 130px
+            "sedes-listas-desplegables sedes-listas-desplegables" 70px
+            "sedes-todas sedes-mapa" auto /
+            400px auto;
+    }
+}
