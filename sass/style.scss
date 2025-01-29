@@ -1,13 +1,16 @@
+$color-primario:#ff7514;
+$color-segundario:#14ff64;
+
 @use "menu";
 @use "home";
 @use "sedes";
 @use "footer";
+@use "global";
+@use "agendarcita";
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
+
+
 
 
 

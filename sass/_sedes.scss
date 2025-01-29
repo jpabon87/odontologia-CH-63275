@@ -1,24 +1,23 @@
 /* Sedes */
 .grid-contenido {
-    display: grid;
-    gap: 10px;
-    grid-template:
-        "sedes-titulo" 170px
-        "sedes-listas-desplegables" 200px
-        "sedes-todas" auto
-        "sedes-mapa" auto;
-}
-
-.sedes-titulo {
-    margin: 10px 20px;
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius:4px ;
+    padding: 10px;
     text-align: center;
 }
 
+.sedes-titulo {
+    grid-area: sedes-titulo;
+    margin: 10px 20px;
+}
+
 .sedes-titulo h1 {
-    margin: 10px 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .sedes-listas-desplegables {
+    grid-area: sedes-listas-desplegables;
     width: 380px;
     margin: 0 auto;
 }
@@ -30,6 +29,7 @@ form {
 }
 
 form label {
+    margin-right: 10px;
     font-weight: bold;
 }
 
@@ -68,12 +68,44 @@ form > div {
     .sedes-listas-desplegables {
         width: 1300px;
     }
+}
 
-    .grid-contenido {
-        grid-template:
-            "sedes-titulo sedes-titulo" 130px
-            "sedes-listas-desplegables sedes-listas-desplegables" 70px
-            "sedes-todas sedes-mapa" auto /
-            400px auto;
-    }
+.sedes-todas{
+    grid-area: sedes-todas;
+    background-color: cornflowerblue;
+}
+
+.sedes-mapa{
+    grid-area: sedes-mapa;
+    display: flex;
+    justify-content: start;
+  
+}
+
+
+.grid-contenido{
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    "sedes-titulo" 170px
+    "sedes-listas-desplegables" 200px
+    "sedes-todas" auto
+    "sedes-mapa" auto;
+}
+
+@media (min-width:600px){
+    .grid-contenido{
+    /*grid-template-columns: 300px auto;
+    grid-template-rows: 50px 50px auto;
+    grid-template-areas: 
+    "sedes-titulo sedes-titulo"
+    "sedes-listas-desplegables sedes-listas-desplegables"
+    "sedes-todas sedes-mapa" ;*/
+
+    grid-template:
+    "sedes-titulo sedes-titulo" 130px
+    "sedes-listas-desplegables sedes-listas-desplegables" 70px
+    "sedes-todas sedes-mapa" auto / 
+    400px auto;
+    }   
 }

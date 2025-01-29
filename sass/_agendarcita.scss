@@ -1,0 +1,78 @@
+/*agendar cita*/
+.caja-agendar-citas{
+    display: flex;
+}
+
+.caja-agendar-citas-1{
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.caja-agendar-citas-1 p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.caja-agendar-citas-1 a{
+    margin: 0 auto;
+    text-decoration: none;
+    background-color:orange;
+    padding: 5px 10px;
+    border-radius: 5px 5px 5px 15px;
+    color: white;
+}
+
+.caja-agendar-citas-2{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display:flex ;
+    justify-content: end;
+    align-items:baseline;
+    margin-top: 30px;
+}
+
+.caja-agendar-citas-2 p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 40px;
+}
+
+.caja-agendar-citas-2-1{
+   display: flex;
+   flex-direction: column;
+   margin-right: 40px;
+   
+}
+
+.caja-agendar-citas-2-1 .interior{
+    margin-bottom: 20px;
+}
+
+.caja-agendar-citas-2-2 .interior{
+    margin-bottom: 20px;
+}
+
+.caja-agendar-citas-2-2{
+    display: flex;
+    flex-direction: column;
+ }
+
+.boton-formulario button{
+    background-color: orange;
+    columns: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 15px;
+    padding: 5px 10px;
+    margin: 5px;
+}
