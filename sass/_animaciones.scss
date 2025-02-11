@@ -1,0 +1,40 @@
+.translate1{
+    animation-name: efectox;
+    animation-iteration-count:initial;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+@keyframes efectox {
+    0% {color: orange;}
+    10%{color: orange;}
+    20%{color: orange;}
+    100%{color: orange;}
+}
+
+
+.animation-coder{
+    font-size: 10em;
+    color: transparent;
+    text-transform: uppercase;
+    background-image: linear-gradient(to left, #2ecc71, #bd4934, #9b59b6, #f39c12);
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    -webkit-background-size:500%;
+    background-size:500%;
+    text-align:left;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+    
+}

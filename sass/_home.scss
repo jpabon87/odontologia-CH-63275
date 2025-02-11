@@ -85,6 +85,12 @@
     margin-bottom: 20px;
 }
 
+.img-responsy{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
 @media (max-width: 768px) {
     .banner {
         flex-direction: column;
@@ -117,14 +123,17 @@
     }
 
     .video-home-lista {
-        padding-left: 20px;
-        font-size: 16px;
+        padding-left: 10px;
+        font-size: 13px;
         margin-top: 0;
+        text-align: center;
+        margin-top: 20px;
     }
 
     .video-home h2 {
         margin-bottom: 10px;
-        font-size: 25px;
+        font-size: 16px;
+        text-align: right;
     }
 
     .video-odontologia {
